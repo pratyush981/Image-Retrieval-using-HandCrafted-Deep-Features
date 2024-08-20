@@ -5,11 +5,11 @@ the complementary strengths of both methods: the detailed color information
 captured by histograms and the intricate, high-level features learned by deep 
 neural networks.  
 ![image](https://github.com/user-attachments/assets/e6ab736b-c053-4b41-919b-14d617d78db6)
-
+                                  OUTPUT
 The methodology involves extracting color histograms to capture the 
 distribution of colors within an image and deep features from the 'avg_pool' 
 layer of VGG16 to encapsulate complex image content. These features are 
-concatenated to form a unified feature vector, providing a comprehensive 
-representation of each image. Similarity between images is measured using 
+concatenated to form a unified feature vector, comprehensively representing each image. Similarity between images is measured using 
 Euclidean distance on the concatenated feature vectors.
 ![output CBIR](https://github.com/user-attachments/assets/35dd3943-2559-4136-bb54-9b7b4bd37e0d)
+                                  OUTPUT                   
