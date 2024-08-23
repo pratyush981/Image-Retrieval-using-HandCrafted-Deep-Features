@@ -5,15 +5,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import skew
 
 def calculate_color_moments(image_path):
-    # Read the image
     image = cv2.imread(image_path)
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
-    # Convert the image to the HSV color space
     hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
-    # Calculate the mean, standard deviation, and skewness for each channel (H, S, V)
     moments = []
     for channel in range(3):
         channel_data = hsv_image[:, :, channel]
@@ -74,7 +71,6 @@ dataset_folder = '/content'
 
 similar_images = find_similar_images(target_image_path, dataset_folder, num_similar=6)
 
-# Print and plot the similar images
 print("Similar Images:")
 for filename, img_path, distance in similar_images:
     print(f"Filename: {filename}, Path: {img_path}, Distance: {distance}")
