@@ -102,7 +102,7 @@ def plot_images(images, target_image_path):
 
     plt.show()
 
-target_image_path = '/content/330.jpg'
+target_image_path = '/content/330.jpg' 
 dataset_folder = '/content'
 
 similar_images = find_similar_images_combined(target_image_path, dataset_folder, num_similar=7)
