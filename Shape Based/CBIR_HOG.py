@@ -6,15 +6,15 @@ from skimage.feature import hog
 from skimage import exposure
 
 def calculate_hog_features(image_path, resize_dim=(128, 128)):
-    # Read the image
+    
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
-    # Resize the image
+   
     image = cv2.resize(image, resize_dim)
 
-    # Calculate HOG features
+    
     hog_features, hog_image = hog(image, pixels_per_cell=(8, 8), cells_per_block=(2, 2), visualize=True, feature_vector=True)
 
     return hog_features
@@ -70,8 +70,8 @@ def plot_images(images, target_image_path):
     plt.show()
 
 # Specify the path to your target image and dataset folder
-target_image_path = '/content/823.jpg'  # Replace with your target image path
-dataset_folder = '/content'  # Replace with your dataset folder path
+target_image_path = '/content/823.jpg' 
+dataset_folder = '/content'  
 
 # Find the top 5 similar images based on HOG features
 similar_images = find_similar_images_hog(target_image_path, dataset_folder, num_similar=6)
