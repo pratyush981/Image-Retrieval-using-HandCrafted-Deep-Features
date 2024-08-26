@@ -66,7 +66,6 @@ def plot_images(similar_images, target_image_path):
 target_image_path = '/content/330.jpg'
 dataset_folder = '/content'
 
-# Find the top similar images based on color histogram
 similar_images = find_similar_images(target_image_path, dataset_folder)
 
 print("Similar Images:")
