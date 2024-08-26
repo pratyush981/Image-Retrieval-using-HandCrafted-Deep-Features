@@ -69,7 +69,6 @@ dataset_folder = '/content'
 # Find the top similar images based on color histogram
 similar_images = find_similar_images(target_image_path, dataset_folder)
 
-# Print and plot the similar images
 print("Similar Images:")
 for filename, img_path, distance in similar_images:
     print(f"Filename: {filename}, Path: {img_path}, Distance: {distance}")
