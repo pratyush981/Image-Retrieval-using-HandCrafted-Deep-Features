@@ -41,10 +41,8 @@ def find_similar_images_hog(target_image_path, dataset_folder, num_similar=6):
             distance = np.linalg.norm(target_features - features)
             distances.append((filename, img_path, distance))
 
-    # Sort images by distance (smallest distance means more similar)
     distances.sort(key=lambda x: x[2])
 
-    # Get the most similar images
     similar_images = distances[:num_similar]
 
     return similar_images
