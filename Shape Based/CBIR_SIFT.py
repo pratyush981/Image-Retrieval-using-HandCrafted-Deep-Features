@@ -34,13 +34,12 @@ def find_similar_images_sift(target_image_path, dataset_folder, num_similar=6):
         descriptors = calculate_sift_features(img_path)
         if descriptors is not None:
             matches = bf.knnMatch(target_descriptors, descriptors, k=2)
-            # Apply ratio test
+            
             good_matches = [m for m, n in matches if m.distance < 0.75 * n.distance]
             distances.append((filename, img_path, len(good_matches)))
 
     distances.sort(key=lambda x: x[2], reverse=True)
 
-    # Get the most similar images
     similar_images = distances[:num_similar]
 
     return similar_images
@@ -65,7 +64,7 @@ def plot_images(images, target_image_path):
 
     plt.show()
 
-# Specify the path
+
 target_image_path = '/content/322.jpg'
 dataset_folder = '/content'
 similar_images = find_similar_images_sift(target_image_path, dataset_folder, num_similar=6)
