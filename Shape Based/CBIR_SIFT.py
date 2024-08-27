@@ -9,7 +9,6 @@ def calculate_sift_features(image_path):
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
-    # Create SIFT detector object
     sift = cv2.SIFT_create()
     keypoints, descriptors = sift.detectAndCompute(image, None)
 
