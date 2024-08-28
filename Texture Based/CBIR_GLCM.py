@@ -66,11 +66,8 @@ def plot_images(images, target_image_path):
 
 target_image_path = '/content/322.jpg'
 dataset_folder = '/content'
-
-# Find the top 5 similar images based on GLCM features
 similar_images = find_similar_images_glcm(target_image_path, dataset_folder, num_similar=6)
 
-# Print and plot the similar images
 print("Similar Images:")
 for filename, img_path, distance in similar_images:
     print(f"Filename: {filename}, Path: {img_path}, Distance: {distance}")
