@@ -10,10 +10,8 @@ def calculate_glcm_features(image_path, distances=[1], angles=[0], properties=['
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
-    # Calculate GLCM
     glcm = greycomatrix(image, distances=distances, angles=angles, symmetric=True, normed=True)
 
-    # Extract GLCM properties
     features = []
     for prop in properties:
         feature = greycoprops(glcm, prop).flatten()
