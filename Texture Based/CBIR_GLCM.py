@@ -28,7 +28,7 @@ def load_images_from_folder(folder):
             if img is not None:
                 images.append((filename, img_path))
     return images
-
+ 
 def find_similar_images_glcm(target_image_path, dataset_folder, num_similar=5):
     target_features = calculate_glcm_features(target_image_path)
     images = load_images_from_folder(dataset_folder)
