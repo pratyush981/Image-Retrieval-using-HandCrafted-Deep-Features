@@ -39,7 +39,7 @@ def find_similar_images(target_image_path, dataset_folder, num_similar=6):
 
     distances.sort(key=lambda x: x[2])
 
-    # Get the most similar images
+    #  most similar images
     similar_images = distances[:num_similar]
 
     return similar_images
