@@ -15,7 +15,6 @@ def calculate_lbp(image_path, radius=1, n_points=8):
     # Calculate histogram of LBP
     hist, _ = np.histogram(lbp.ravel(), bins=np.arange(0, n_points + 3), range=(0, n_points + 2))
 
-    # Normalize the histogram
     hist = hist.astype("float")
     hist /= hist.sum()
 
