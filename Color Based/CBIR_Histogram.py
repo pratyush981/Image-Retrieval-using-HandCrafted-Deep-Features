@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def calculate_histogram(image_path):
     image = cv2.imread(image_path)
     if image is None:
-        raise ValueError(f"Image at {image_path} not found or could not be opened.")
+        raise ValueError(f"Image at {image_path} not found or could not be opened.") 
 
     hist_b = cv2.calcHist([image], [0], None, [256], [0, 256])
     hist_g = cv2.calcHist([image], [1], None, [256], [0, 256])
