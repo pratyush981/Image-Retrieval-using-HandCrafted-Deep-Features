@@ -29,7 +29,7 @@ def find_similar_images_sift(target_image_path, dataset_folder, num_similar=6):
     images = load_images_from_folder(dataset_folder)
 
     bf = cv2.BFMatcher()
-    distances = []
+    distances = [] 
     for filename, img_path in images:
         descriptors = calculate_sift_features(img_path)
         if descriptors is not None:
