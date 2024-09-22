@@ -16,7 +16,6 @@ def calculate_mean(image_path):
 image_paths = ['/content/011.jpg'] #Your image path
 
 
-
 for i, image_path in enumerate(image_paths):
     mean_values = calculate_mean(image_path)
     print(f"Image {i+1} ({image_path}) mean values: {mean_values}")
