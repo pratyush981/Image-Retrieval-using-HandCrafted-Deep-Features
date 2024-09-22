@@ -13,7 +13,6 @@ def calculate_mean(image_path):
 
     return (mean_b, mean_g, mean_r)
 
-#Your image path
 image_paths = ['/content/011.jpg'] #Your image path
 #Your image path
 
