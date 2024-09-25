@@ -63,7 +63,7 @@ def plot_images(images, target_image_path):
         plt.axis('off')
 
     plt.show()
- 
+
 target_image_path = '/content/322.jpg'
 dataset_folder = '/content'
 similar_images = find_similar_images_glcm(target_image_path, dataset_folder, num_similar=6)
