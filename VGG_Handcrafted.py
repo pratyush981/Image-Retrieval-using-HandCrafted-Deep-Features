@@ -69,7 +69,7 @@ def find_similar_images_combined(target_image_path, dataset_folder, num_similar=
 
         combined_features = np.concatenate([hist, lbp, deep])
         features_list.append((filename, img_path, combined_features))
-
+ 
     target_features = target_features.reshape(1, -1)
     distances = []
     for filename, img_path, features in features_list:
