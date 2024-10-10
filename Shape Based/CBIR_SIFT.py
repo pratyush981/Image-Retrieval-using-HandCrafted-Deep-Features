@@ -53,7 +53,7 @@ def plot_images(images, target_image_path):
     plt.imshow(target_image)
     plt.title("Target Image")
     plt.axis('off')
-
+ 
     for i, (filename, img_path, distance) in enumerate(images):
         img = cv2.imread(img_path)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
