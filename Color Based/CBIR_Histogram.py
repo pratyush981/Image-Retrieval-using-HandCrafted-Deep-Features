@@ -17,7 +17,7 @@ def calculate_histogram(image_path):
     hist_r = cv2.normalize(hist_r, hist_r).flatten()
     
     return np.concatenate([hist_b, hist_g, hist_r])
-
+    
 def load_images_from_folder(folder):
     images = []
     for filename in os.listdir(folder):
