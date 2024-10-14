@@ -37,7 +37,7 @@ def find_similar_images(target_image_path, dataset_folder, num_similar=10):
         hist = calculate_histogram(img_path)
         distance = cv2.compareHist(target_hist, hist, cv2.HISTCMP_CHISQR)
         distances.append((filename, img_path, distance))
-
+ 
     distances.sort(key=lambda x: x[2])
     similar_images = distances[:num_similar]
 
