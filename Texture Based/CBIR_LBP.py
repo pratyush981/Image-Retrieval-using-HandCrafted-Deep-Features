@@ -11,7 +11,7 @@ def calculate_lbp(image_path, radius=1, n_points=8):
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
     lbp = local_binary_pattern(image, n_points, radius, method='uniform')
-
+    
     hist, _ = np.histogram(lbp.ravel(), bins=np.arange(0, n_points + 3), range=(0, n_points + 2))
 
     hist = hist.astype("float")
