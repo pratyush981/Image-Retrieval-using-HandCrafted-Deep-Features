@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 base_model = VGG16(weights='imagenet')
 model = Model(inputs=base_model.input, outputs=base_model.get_layer('fc1').output)
-
+ 
 def calculate_color_histogram(image_path, bins=(8, 8, 8)):
     image = cv2.imread(image_path)
     if image is None:
