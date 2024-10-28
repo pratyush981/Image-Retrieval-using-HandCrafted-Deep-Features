@@ -43,7 +43,7 @@ def find_similar_images_glcm(target_image_path, dataset_folder, num_similar=5):
     similar_images = distances[:num_similar]
 
     return similar_images
-
+ 
 def plot_images(images, target_image_path):
     target_image = cv2.imread(target_image_path)
     target_image = cv2.cvtColor(target_image, cv2.COLOR_BGR2RGB)
