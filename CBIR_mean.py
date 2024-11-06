@@ -35,7 +35,6 @@ def find_similar_images(target_image_path, dataset_folder, num_similar=6):
         distance = np.linalg.norm(np.array(target_mean) - np.array(mean))
         distances.append((filename, img_path, distance))
 
-
     distances.sort(key=lambda x: x[2])
 
     similar_images = distances[:num_similar]
