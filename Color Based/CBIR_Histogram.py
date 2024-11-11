@@ -11,7 +11,7 @@ def calculate_histogram(image_path):
     hist_b = cv2.calcHist([image], [0], None, [256], [0, 256])
     hist_g = cv2.calcHist([image], [1], None, [256], [0, 256])
     hist_r = cv2.calcHist([image], [2], None, [256], [0, 256])
-
+ 
     hist_b = cv2.normalize(hist_b, hist_b).flatten()
     hist_g = cv2.normalize(hist_g, hist_g).flatten()
     hist_r = cv2.normalize(hist_r, hist_r).flatten()
