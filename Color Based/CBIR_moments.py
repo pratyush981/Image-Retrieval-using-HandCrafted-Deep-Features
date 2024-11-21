@@ -3,7 +3,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 from scipy.stats import skew
- 
+
 def calculate_color_moments(image_path):
     image = cv2.imread(image_path)
     if image is None:
