@@ -13,7 +13,7 @@ def calculate_lbp(image_path, radius=1, n_points=8):
     lbp = local_binary_pattern(image, n_points, radius, method='uniform')
     
     hist, _ = np.histogram(lbp.ravel(), bins=np.arange(0, n_points + 3), range=(0, n_points + 2))
-
+    
     hist = hist.astype("float")
     hist /= hist.sum()
 
