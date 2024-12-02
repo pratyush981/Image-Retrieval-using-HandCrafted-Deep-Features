@@ -3,7 +3,7 @@ traditional image features, such as color histograms, with deep learning-based
 features extracted using the pre-trained VGG16 model. The goal is to leverage 
 the complementary strengths of both methods: the detailed color information 
 captured by histograms and the intricate, high-level features learned by deep 
-neural networks.   
+neural networks.  
 ![image](https://github.com/user-attachments/assets/e6ab736b-c053-4b41-919b-14d617d78db6)
                                   OUTPUT 
                      
