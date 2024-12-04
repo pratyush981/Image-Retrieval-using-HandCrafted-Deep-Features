@@ -3,7 +3,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 from skimage.feature import greycomatrix, greycoprops
-
+ 
 def calculate_glcm_features(image_path, distances=[1], angles=[0], properties=['contrast', 'dissimilarity', 'homogeneity', 'energy', 'correlation']):
 
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
