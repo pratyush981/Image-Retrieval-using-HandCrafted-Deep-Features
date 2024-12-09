@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def calculate_mean(image_path):
-    # Read kar rahe hain image ko  
+    # Read kar rahe hain image ko
     image = cv2.imread(image_path)
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
