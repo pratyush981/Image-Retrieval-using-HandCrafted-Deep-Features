@@ -5,7 +5,7 @@ the complementary strengths of both methods: the detailed color information
 captured by histograms and the intricate, high-level features learned by deep 
 neural networks.   
 ![image](https://github.com/user-attachments/assets/e6ab736b-c053-4b41-919b-14d617d78db6)
-                                   OUTPUT 
+                                    OUTPUT 
                     
 The methodology involves extracting color histograms to capture the 
 distribution of colors within an image and deep features from the 'avg_pool' 
