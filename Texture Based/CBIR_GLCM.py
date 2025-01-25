@@ -16,7 +16,6 @@ def calculate_glcm_features(image_path, distances=[1], angles=[0], properties=['
     for prop in properties:
         feature = greycoprops(glcm, prop).flatten()
         features.extend(feature)
-
     return features
 
 def load_images_from_folder(folder):
