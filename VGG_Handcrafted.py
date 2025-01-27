@@ -9,7 +9,7 @@ from tensorflow.keras.models import Model
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics.pairwise import euclidean_distances
 import matplotlib.pyplot as plt
- 
+
 base_model = VGG16(weights='imagenet')
 model = Model(inputs=base_model.input, outputs=base_model.get_layer('fc1').output)
  
