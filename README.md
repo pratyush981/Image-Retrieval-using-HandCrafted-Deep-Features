@@ -13,5 +13,5 @@ layer of VGG16 to encapsulate complex image content. These features are
 concatenated to form a unified feature vector, comprehensively representing each image. Similarity between images is measured using 
 Euclidean distance on the concatenated feature vectors.
 ![output CBIR](https://github.com/user-attachments/assets/35dd3943-2559-4136-bb54-9b7b4bd37e0d)
-                                  OUTPUT                   
+                                   OUTPUT                   
      
