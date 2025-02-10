@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from skimage.feature import hog
 from skimage import exposure
 
-def calculate_hog_features(image_path, resize_dim=(128, 128)):
+def calculate_hog_features(image_path, resize_dim=(128, 128)): 
     
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
