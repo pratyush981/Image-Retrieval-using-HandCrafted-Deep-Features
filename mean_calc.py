@@ -8,7 +8,7 @@ def calculate_mean(image_path):
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
         
     mean_b = np.mean(image[:, :, 0])
-    mean_g = np.mean(image[:, :, 1])
+    mean_g = np.mean(image[:, :, 1]) 
     mean_r = np.mean(image[:, :, 2])
 
     return (mean_b, mean_g, mean_r)
