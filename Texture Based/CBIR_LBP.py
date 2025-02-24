@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os 
 import matplotlib.pyplot as plt
-from skimage.feature import local_binary_pattern
+from skimage.feature import local_binary_pattern 
 from scipy.spatial import distance
  
 def calculate_lbp(image_path, radius=1, n_points=8):
