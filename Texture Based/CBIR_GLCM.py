@@ -9,7 +9,7 @@ def calculate_glcm_features(image_path, distances=[1], angles=[0], properties=['
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
-
+ 
     glcm = greycomatrix(image, distances=distances, angles=angles, symmetric=True, normed=True)
  
     features = []
