@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.vgg16 import preprocess_input
 from tensorflow.keras.models import Model 
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.metrics.pairwise import euclidean_distances 
 import matplotlib.pyplot as plt
 
 base_model = VGG16(weights='imagenet')
