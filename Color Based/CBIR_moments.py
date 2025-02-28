@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import os
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 from scipy.stats import skew
  
 def calculate_color_moments(image_path):
