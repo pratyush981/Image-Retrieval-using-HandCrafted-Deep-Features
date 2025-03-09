@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import os
-import matplotlib.pyplot as plt  
+import matplotlib.pyplot as plt
 
 def calculate_mean(image_path): 
     # Read the image 
