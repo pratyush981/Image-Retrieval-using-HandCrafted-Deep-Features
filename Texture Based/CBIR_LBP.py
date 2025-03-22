@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from skimage.feature import local_binary_pattern 
 from scipy.spatial import distance
  
-def calculate_lbp(image_path, radius=1, n_points=8):
+def calculate_lbp(image_path, radius=1, n_points=8): 
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
