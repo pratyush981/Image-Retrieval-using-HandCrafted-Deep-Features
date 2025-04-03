@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+import numpy as np 
 import os
 from skimage.feature import local_binary_pattern
 from tensorflow.keras.applications import VGG16  
