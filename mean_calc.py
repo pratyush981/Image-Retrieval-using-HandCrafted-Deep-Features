@@ -1,4 +1,4 @@
-import cv2
+import cv2 
 import numpy as np
    
 def calculate_mean(image_path):  
