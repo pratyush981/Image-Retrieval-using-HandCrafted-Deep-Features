@@ -12,7 +12,7 @@ def calculate_sift_features(image_path):
     sift = cv2.SIFT_create()
     keypoints, descriptors = sift.detectAndCompute(image, None)
 
-    return descriptors
+    return descriptors 
 
 def load_images_from_folder(folder):
     images = []
