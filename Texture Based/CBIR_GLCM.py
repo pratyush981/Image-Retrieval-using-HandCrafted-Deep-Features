@@ -1,6 +1,6 @@
 import cv2 
 import numpy as np  
-import os
+import os 
 import matplotlib.pyplot as plt
 from skimage.feature import greycomatrix, greycoprops 
 
