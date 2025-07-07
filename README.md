@@ -1,6 +1,6 @@
 This project presents a comprehensive image retrieval system that integrates 
 traditional image features, such as color histograms, with deep learning-based
-features extracted using the pre-trained VGG16 model. The goal is to leverage  
+features extracted using the pre-trained VGG16 model. The goal is to leverage   
 the complementary strengths of both methods: the detailed color information  
 captured by histograms and the intricate, high-level features learned by deep  
 neural networks.   
