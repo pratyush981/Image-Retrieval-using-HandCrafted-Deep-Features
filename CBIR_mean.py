@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
  
 def calculate_mean(image_path): 
     # Read the image  
-    image = cv2.imread(image_path) 
+    image = cv2.imread(image_path)  
     if image is None:
         raise ValueError(f"Image at {image_path} not found or could not be opened.")
 
