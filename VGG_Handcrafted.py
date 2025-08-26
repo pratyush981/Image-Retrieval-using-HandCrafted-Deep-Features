@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np 
 import os  
-from skimage.feature import local_binary_pattern
+from skimage.feature import local_binary_pattern 
 from tensorflow.keras.applications import VGG16   
 from tensorflow.keras.preprocessing import image 
 from tensorflow.keras.applications.vgg16 import preprocess_input
